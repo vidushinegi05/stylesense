@@ -1,3 +1,4 @@
+// Developed by Vidushi Negi (24BCE0786)
 import Header from "../components/Header";
 import styleTips from "../data/styleTips";
 

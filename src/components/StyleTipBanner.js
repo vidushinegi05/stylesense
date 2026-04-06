@@ -1,3 +1,4 @@
+// Developed by Vidushi Negi (24BCE0786)
 function StyleTipBanner({ tip }) {
   return (
     <section className="style-tip-banner">

@@ -1,3 +1,4 @@
+// Developed by Vidushi Negi (24BCE0786)
 import { NavLink } from "react-router-dom";
 
 function Navbar() {

@@ -1,3 +1,4 @@
+// Developed by Vidushi Negi (24BCE0786)
 import { useState } from "react";
 import Header from "../components/Header";
 import OutfitForm from "../components/OutfitForm";
@@ -7,20 +8,25 @@ import SuggestionBox from "../components/SuggestionBox";
 import StyleTipBanner from "../components/StyleTipBanner";
 import AccessoriesSuggestion from "../components/AccessoriesSuggestion";
 import styleTips from "../data/styleTips";
-import accessoryRecommender from "../utils/accessoryRecommender";
-import evaluateOutfit from "../utils/outfitEvaluator";
+import vidushiNegi_24BCE0786_accessoryRecommender from "../utils/accessoryRecommender";
+import vidushiNegi_24BCE0786_evaluateOutfit from "../utils/outfitEvaluator";
 
 function EvaluatePage() {
+  const vidushiNegi_24BCE0786_flag = true;
   const [topType, setTopType] = useState("");
   const [topColor, setTopColor] = useState("");
   const [bottomType, setBottomType] = useState("");
   const [bottomColor, setBottomColor] = useState("");
   const [occasion, setOccasion] = useState("");
+  const [outerLayer, setOuterLayer] = useState("");
+  const [skinTone, setSkinTone] = useState("medium");
   const [result, setResult] = useState(null);
   const [accessorySuggestion, setAccessorySuggestion] = useState(null);
   const [error, setError] = useState("");
 
-  const randomTip = styleTips[Math.floor(Math.random() * styleTips.length)];
+  const randomTip = vidushiNegi_24BCE0786_flag
+    ? styleTips[Math.floor(Math.random() * styleTips.length)]
+    : styleTips[0];
 
   const handleEvaluate = () => {
     if (!topType || !topColor || !bottomType || !bottomColor || !occasion) {
@@ -32,15 +38,17 @@ function EvaluatePage() {
 
     setError("");
 
-    const evaluation = evaluateOutfit(
+    const evaluation = vidushiNegi_24BCE0786_evaluateOutfit(
       topType,
       topColor,
       bottomType,
       bottomColor,
-      occasion
+      occasion,
+      outerLayer,
+      skinTone
     );
 
-    const accessoryRecommendation = accessoryRecommender(
+    const accessoryRecommendation = vidushiNegi_24BCE0786_accessoryRecommender(
       topType,
       topColor,
       bottomType,
@@ -72,6 +80,10 @@ function EvaluatePage() {
             setBottomColor={setBottomColor}
             occasion={occasion}
             setOccasion={setOccasion}
+            outerLayer={outerLayer}
+            setOuterLayer={setOuterLayer}
+            skinTone={skinTone}
+            setSkinTone={setSkinTone}
             onEvaluate={handleEvaluate}
           />
         </div>
