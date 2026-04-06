@@ -1,3 +1,4 @@
+// Developed by Vidushi Negi (24BCE0786)
 import "./App.css";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -7,11 +8,16 @@ import AboutPage from "./pages/AboutPage";
 import StyleTipsPage from "./pages/StyleTipsPage";
 
 function App() {
+  const vidushiNegi_24BCE0786_flag = true;
+
   return (
     <div className="app-shell">
       <Navbar />
       <main className="app">
-        <div className="container">
+        <div
+          className="container"
+          data-student-flag={vidushiNegi_24BCE0786_flag ? "enabled" : "disabled"}
+        >
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/evaluate" element={<EvaluatePage />} />

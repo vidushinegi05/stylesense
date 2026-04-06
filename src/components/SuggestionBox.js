@@ -1,3 +1,4 @@
+// Developed by Vidushi Negi (24BCE0786)
 function SuggestionBox({ result }) {
   if (!result) {
     return (
@@ -11,7 +12,7 @@ function SuggestionBox({ result }) {
   return (
     <section className="section-card">
       <h2>Styling Suggestion</h2>
-      <p>{result.suggestion}</p>
+      <p>{result.recommendation}</p>
     </section>
   );
 }

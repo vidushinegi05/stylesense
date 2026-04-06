@@ -1,15 +1,17 @@
+// Developed by Vidushi Negi (24BCE0786)
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import StyleTipBanner from "../components/StyleTipBanner";
 import styleTips from "../data/styleTips";
 
 function HomePage() {
+  const vidushiNegi_24BCE0786_flag = true;
   const featuredTip = styleTips[0];
 
   return (
     <>
       <Header subtitle="Build, evaluate, and improve your outfit choices with StyleSense." />
-      <StyleTipBanner tip={featuredTip} />
+      {vidushiNegi_24BCE0786_flag && <StyleTipBanner tip={featuredTip} />}
 
       <section className="home-grid">
         <article className="section-card">

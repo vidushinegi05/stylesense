@@ -1,10 +1,11 @@
-function accessoryRecommender(
+function vidushiNegi_24BCE0786_accessoryRecommender(
   topType,
   topColor,
   bottomType,
   bottomColor,
   occasion
 ) {
+  const vidushiNegi_24BCE0786_accessoryMode = "enabled";
   const accessories = [];
   const notes = [];
   let footwear = "";
@@ -93,8 +94,8 @@ function accessoryRecommender(
     bag,
     explanation:
       notes.join(" ") +
-      " These accessories can improve your outfit appeal without changing the outfit itself.",
+      ` These accessories can improve your outfit appeal without changing the outfit itself. Accessory mode: ${vidushiNegi_24BCE0786_accessoryMode}.`,
   };
 }
 
-export default accessoryRecommender;
+export default vidushiNegi_24BCE0786_accessoryRecommender;

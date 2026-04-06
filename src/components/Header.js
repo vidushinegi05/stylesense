@@ -1,3 +1,4 @@
+// Developed by Vidushi Negi (24BCE0786)
 function Header({
   title = "StyleSense",
   subtitle = "Occasion-Aware Outfit Evaluation System",

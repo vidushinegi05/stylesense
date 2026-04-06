@@ -1,9 +1,19 @@
+// Developed by Vidushi Negi (24BCE0786)
 import {
   bottomOptions,
   colorOptions,
   occasionOptions,
   topOptions,
 } from "../data/outfitOptions";
+
+const outerLayerOptions = [
+  { label: "None", value: "" },
+  { label: "Blazer", value: "blazer" },
+  { label: "Denim Jacket", value: "denim jacket" },
+  { label: "Hoodie", value: "hoodie" },
+];
+
+const skinToneOptions = ["fair", "medium", "dusky", "deep"];
 
 function OutfitForm({
   topType,
@@ -16,6 +26,10 @@ function OutfitForm({
   setBottomColor,
   occasion,
   setOccasion,
+  outerLayer,
+  setOuterLayer,
+  skinTone,
+  setSkinTone,
   onEvaluate,
 }) {
   return (
@@ -101,6 +115,40 @@ function OutfitForm({
               type="button"
               className={`occasion-pill ${occasion === item ? "selected-pill" : ""}`}
               onClick={() => setOccasion(item)}
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="builder-section">
+        <h3>Select Outer Layer</h3>
+        <div className="occasion-row">
+          {outerLayerOptions.map((item) => (
+            <button
+              key={item.label}
+              type="button"
+              className={`occasion-pill ${
+                outerLayer === item.value ? "selected-pill" : ""
+              }`}
+              onClick={() => setOuterLayer(item.value)}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="builder-section">
+        <h3>Select Skin Tone Profile</h3>
+        <div className="occasion-row">
+          {skinToneOptions.map((item) => (
+            <button
+              key={item}
+              type="button"
+              className={`occasion-pill ${skinTone === item ? "selected-pill" : ""}`}
+              onClick={() => setSkinTone(item)}
             >
               {item}
             </button>
