@@ -33,6 +33,12 @@ function Navbar() {
           >
             About
           </NavLink>
+          <NavLink
+            to="/portfolio"
+            className={({ isActive }) => `nav-link ${isActive ? "active-link" : ""}`}
+          >
+            Portfolio
+          </NavLink>
         </div>
       </div>
     </nav>

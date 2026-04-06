@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import EvaluatePage from "./pages/EvaluatePage";
 import AboutPage from "./pages/AboutPage";
 import StyleTipsPage from "./pages/StyleTipsPage";
+import PortfolioPage from "./pages/PortfolioPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/evaluate" element={<EvaluatePage />} />
             <Route path="/style-tips" element={<StyleTipsPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
