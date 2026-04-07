@@ -1,70 +1,49 @@
-# StyleSense
+#
+👗 Personalized Style Assistant
+###
+24bce0786
+A modern, responsive React application that serves as a digital fashion consultant. Users can build outfit combinations, evaluate color harmony for specific occasions, and receive tailored accessory recommendations.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developed by: Vidushi Negi (24BCE0786)
+#
+✨ Features#
+Outfit Evaluator: An interactive interface where users can select clothing items, colors (Black, White, Blue, Red, Pink, Beige, Green), and occasions to receive a compatibility rating.
+###
+Accessory Recommendations: Provides automated suggestions for accessories based on the selected outfit and occasion.
 
-## Available Scripts
+Style Tips Hub: A dedicated section offering fashion advice and "Pro-Tips" for elevating personal style.
 
-In the project directory, you can run the following commands:
+Responsive Design: Optimized for all screen sizes, from large desktops to mobile devices, using CSS Grid and Flexbox.
 
-### `npm start`
+Glassmorphic UI: A premium aesthetic featuring backdrop blurs, radial gradients, and soft pastel color palettes.
 
-Runs the app in development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Developer Portfolio: Integration of a personal portfolio and about section to showcase the developer's information.
+#
+🛠️ Tech Stack
+###
+Frontend Library: React.js
 
-The page reloads when you make changes.  
-You may also see lint errors in the console.
+Routing: React Router DOM (v6+)
 
-### `npm test`
+Styling: CSS3 (Custom properties, Gradients, Media Queries, and Glassmorphism)
 
-Launches the test runner in interactive watch mode.  
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Icons/Images: Emoji-based visual cues and CSS-based components.
+#
 
-### `npm run build`
-
-Builds the app for production in the `build` folder.  
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include hashes.  
-Your app is ready to be deployed.
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back.**
-
-If you are not satisfied with the build tool and configuration choices, you can `eject` at any time. This command removes the single build dependency from your project.
-
-Instead, it copies all configuration files and transitive dependencies such as webpack, Babel, and ESLint directly into your project so you have full control over them. All commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At that point, you are on your own.
-
-You do not have to use `eject`. The curated feature set is suitable for small and middle deployments, and you should not feel obligated to use this feature. However, this option exists in case you need that flexibility later.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [Create React App - Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [Create React App - Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [Create React App - Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [Create React App - Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [Create React App - Deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [Create React App - Troubleshooting Build Minification](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📂 Project Structure
+```
+Plaintext
+src/
+├── components/
+│   └── Navbar.js         # Navigation component with sticky positioning
+├── pages/
+│   ├── HomePage.js       # Landing page with project overview
+│   ├── EvaluatePage.js   # Main outfit builder and evaluation logic
+│   ├── StyleTipsPage.js  # Grid of fashion tips and banners
+│   ├── AboutPage.js      # Information about the application
+│   └── PortfolioPage.js  # Developer's professional showcase
+├── App.js                # Main application component & routing logic
+├── App.css               # Global styles and component-specific styling
+├── index.js              # Entry point for the React application
+└── index.css             # Base resets and global box-sizing
+```
